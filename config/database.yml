@@ -13,7 +13,7 @@ test:
 
 production:
   <<: *default
-  database: <%= ENV['PGDATABASE'] %>
+  database: <%= ENV['PGHOST'] %>
   username: <%= ENV['PGUSER'] %>
   password: <%= ENV['PGPASSWORD'] %>
   host: <%= ENV['PGHOST'] %>
